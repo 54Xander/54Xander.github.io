@@ -1,111 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhaoxiang Liu | Academic Homepage</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --link-color: #2980b9;
-            --bg-color: #f9f9f9;
-            --text-color: #333;
-        }
-        body {
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1, h2, h3 { color: var(--primary-color); }
-        h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 40px; }
-        .header-container { display: flex; align-items: center; gap: 40px; margin-bottom: 30px; }
-        .profile-pic { width: 160px; height: 160px; border-radius: 10px; object-fit: cover; border: 2px solid #eee; }
-        .contact-info { font-size: 0.95em; }
-        .experience-item { margin-bottom: 20px; }
-        .item-title { font-weight: bold; color: var(--secondary-color); font-size: 1.1em; }
-        .item-sub { color: #666; font-style: italic; }
-        .date { float: right; color: #777; font-weight: normal; }
-        .tags { margin-top: 5px; }
-        .tag { background: #eef2f7; color: #446688; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; display: inline-block; }
-        ul { padding-left: 20px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zhaoxiang Liu | Academic Homepage</title>
+
+<style>
+
+:root{
+--primary:#1f3a5f;
+--secondary:#2c6e91;
+--accent:#1abc9c;
+--bg:#f7f9fc;
+--text:#333;
+}
+
+body{
+font-family:"Segoe UI",Roboto,Arial,sans-serif;
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
+
+h1,h2{
+color:var(--primary);
+}
+
+h2{
+border-bottom:2px solid #ddd;
+padding-bottom:8px;
+margin-top:40px;
+}
+
+a{
+color:var(--secondary);
+text-decoration:none;
+}
+
+a:hover{
+color:var(--accent);
+}
+
+.header{
+display:flex;
+align-items:center;
+gap:35px;
+margin-bottom:30px;
+}
+
+.photo{
+width:160px;
+height:160px;
+border-radius:12px;
+object-fit:cover;
+border:2px solid #eee;
+}
+
+.info{
+font-size:0.95em;
+}
+
+.date{
+float:right;
+color:#777;
+}
+
+.item{
+margin-bottom:18px;
+}
+
+.title{
+font-weight:bold;
+color:var(--secondary);
+font-size:1.05em;
+}
+
+.sub{
+font-style:italic;
+color:#666;
+}
+
+.tag{
+background:#eef3f8;
+padding:3px 8px;
+border-radius:5px;
+font-size:0.85em;
+margin-right:6px;
+display:inline-block;
+margin-top:4px;
+}
+
+ul{
+padding-left:20px;
+}
+
+.footer{
+margin-top:60px;
+text-align:center;
+font-size:0.85em;
+color:#777;
+border-top:1px solid #eee;
+padding-top:20px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header class="header-container">
-        <img src="me.jpg" alt="Zhaoxiang Liu" class="profile-pic" onerror="this.src='https://via.placeholder.com/160?text=Photo'">
-        <div>
-            <h1>Zhaoxiang Liu (刘哲贤)</h1>
-            <p style="font-size: 1.1em; margin: 5px 0;">Ph.D. Candidate in AI-Driven Drug Design</p>
-            <div class="contact-info">
-                📍 Huazhong Agricultural University / Wuhan University<br>
-                📧 Email: <a href="mailto:your_email@hzau.edu.cn">your_email@hzau.edu.cn</a><br>
-                🔗 <a href="https://github.com/54Xander" target="_blank">GitHub: 54Xander</a>
-            </div>
-        </div>
-    </header>
+<header class="header">
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a multi-disciplinary researcher with a unique background spanning <strong>Pharmaceutical Engineering</strong>, <strong>Medicinal Chemistry</strong>, and <strong>Electronic Information (AI)</strong>. 
-            My research focuses on <strong>AI-driven RNA-targeted drug design</strong> and the mechanical stability of G-Quadruplexes. 
-            I possess a "Wet-Dry Lab Loop" skill set: leveraging deep learning (Transformers, GNNs) for virtual screening and validating results through single-molecule magnetic tweezers, protein purification, and cell culture.
-        </p>
-    </section>
+<img src="zxliu.jpg" class="photo"
+onerror="this.src='https://via.placeholder.com/160?text=Photo'">
 
-    <section>
-        <h2>Research Experience</h2>
-        
-        <div class="experience-item">
-            <span class="date">2023 - Present</span>
-            <div class="item-title">AI-Driven RNA-Targeted Small Molecule Drug Design</div>
-            <div class="item-sub">Huazhong Agricultural University | Ph.D. Project</div>
-            <p>Constructed deep learning virtual screening models based on Transformer/GNN architectures. Integrated molecular docking to identify and optimize potential lead compounds for RNA targets.</p>
-        </div>
+<div>
 
-        <div class="experience-item">
-            <span class="date">2023 - Present</span>
-            <div class="item-title">Mechanical Stability & Unfolding Kinetics of Intermolecular G-Quadruplexes</div>
-            <div class="item-sub">Wuhan University | Collaborative Research</div>
-            <p>Utilized <strong>Single-Molecule Magnetic Tweezers</strong> and kinetic simulations to quantitatively analyze the structural stability and functional differences of intermolecular G4 structures.</p>
-        </div>
+<h1>Zhaoxiang Liu (刘哲贤)</h1>
 
-        <div class="experience-item">
-            <span class="date">2020 - 2023</span>
-            <div class="item-title">Covalent Small Molecule Drug Screening & Mechanism Research</div>
-            <div class="item-sub">Hubei University of Technology | Master's Thesis</div>
-            <p>Established a full-cycle screening system from protein purification and cell culture to MTT toxicity testing. Analyzed drug-protein interactions via Western Blot and Protein Crystallography.</p>
-        </div>
-    </section>
+<p style="font-size:1.1em;margin:5px 0;">
+Ph.D. Candidate | AI-Driven Drug Design
+</p>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Huazhong Agricultural University</strong>, Ph.D. in Electronic Information <span class="date">2023 - Pres.</span></li>
-            <li><strong>Hubei University of Technology</strong>, M.S. in Medicinal Chemistry <span class="date">2020 - 2023</span></li>
-            <li><strong>Dezhou University</strong>, B.S. in Pharmaceutical Engineering <span class="date">2015 - 2019</span></li>
-        </ul>
-    </section>
+<div class="info">
 
-    <section>
-        <h2>Skills & Qualifications</h2>
-        <ul>
-            <li><strong>AI & Computation:</strong> PyTorch, Deep Learning (Transformer, GNN), Molecular Docking, Python.</li>
-            <li><strong>Wet Lab:</strong> Single-molecule Magnetic Tweezers, Protein Purification, Cell Culture, Western Blot, MTT.</li>
-            <li><strong>Languages:</strong> English (CET-4/CET-6), fluent in reading professional literature.</li>
-            <li><strong>Certificates:</strong> National Computer Rank Examination Level 2, Teacher Qualification, Human Resource Management Certificate.</li>
-        </ul>
-    </section>
+📍 Huazhong Agricultural University / Wuhan University <br>
 
-    <footer style="margin-top: 60px; text-align: center; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 20px;">
-        <p>&copy; 2026 Zhaoxiang Liu. All rights reserved.</p>
-    </footer>
+📧 Email:
+<a href="mailto:your_email@hzau.edu.cn">
+your_email@hzau.edu.cn
+</a>
+
+<br>
+
+🔗
+<a href="https://github.com/54Xander" target="_blank">
+GitHub: 54Xander
+</a>
+
+</div>
+
+</div>
+</header>
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+
+Welcome to my homepage! I am currently a Ph.D. candidate at <b>Huazhong Agricultural University</b>.  
+My research lies at the intersection of <b>Artificial Intelligence</b>, <b>Bioinformatics</b>, and <b>Drug Discovery</b>, with a focus on <b>AI-driven RNA-targeted small molecule drug design</b>.
+
+</p>
+
+<p>
+
+My work integrates <b>deep learning-based virtual screening</b> with <b>biophysical experiments</b> to decode RNA–small molecule interaction mechanisms and accelerate therapeutic discovery.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Research Interests</h2>
+
+<ul>
+
+<li>
+<b>AI in Drug Discovery</b><br>
+Deep learning and generative models for molecular design.
+</li>
+
+<li>
+<b>RNA-Targeted Therapeutics</b><br>
+Prediction of RNA structure and RNA–small molecule interactions.
+</li>
+
+<li>
+<b>Computational Biology</b><br>
+Application of Transformers and Graph Neural Networks (GNNs) to biological data.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<ul>
+
+<li>
+<b>Huazhong Agricultural University</b> — Ph.D. in Electronic Information
+<span class="date">2023 – Present</span>
+</li>
+
+<li>
+<b>Hubei University of Technology</b> — M.S. in Medicinal Chemistry
+<span class="date">2020 – 2023</span>
+</li>
+
+<li>
+<b>Dezhou University</b> — B.S. in Pharmaceutical Engineering
+<span class="date">2015 – 2019</span>
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Research Experience</h2>
+
+<div class="item">
+
+<span class="date">2023 – Present</span>
+
+<div class="title">
+AI-Driven RNA-Targeted Small Molecule Drug Design
+</div>
+
+<div class="sub">
+Huazhong Agricultural University
+</div>
+
+<p>
+Developed deep learning virtual screening models based on Transformer and GNN architectures to predict RNA–ligand binding affinity.
+</p>
+
+</div>
+
+<div class="item">
+
+<span class="date">2023 – Present</span>
+
+<div class="title">
+Mechanical Stability of Intermolecular G-Quadruplexes
+</div>
+
+<div class="sub">
+Wuhan University
+</div>
+
+<p>
+Using single-molecule magnetic tweezers and kinetic simulations to study G4 structural stability.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Selected Research</h2>
+
+<div class="item">
+
+<div class="title">
+DistRMI: A Deep Distance-Aware Neural Network for Explainable RNA Loop Motif–Small Molecule Interaction Prediction
+</div>
+
+<p>
+
+Developed a deep learning framework that integrates distance-aware interaction modeling to predict RNA loop motif–small molecule binding.
+The model improves interpretability by identifying key interaction regions responsible for binding affinity.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>
+<b>AI & Computational Biology</b><br>
+Deep Learning, Transformers, Graph Neural Networks (GNN), RNA–ligand interaction prediction, molecular docking
+</li>
+
+<li>
+<b>Programming</b><br>
+Python, PyTorch, RDKit, Bioinformatics data analysis
+</li>
+
+<li>
+<b>Wet Lab Techniques</b><br>
+Single-Molecule Magnetic Tweezers, Protein Purification, Cell Culture, Western Blot, MTT Assays
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Certificates</h2>
+
+<ul>
+
+<li>National Computer Rank Examination Level 2</li>
+<li>Teacher Qualification Certificate</li>
+<li>Human Resource Management Certificate</li>
+
+</ul>
+
+</section>
+
+<div class="footer">
+© 2026 Zhaoxiang Liu
+</div>
 
 </body>
 </html>
