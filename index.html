@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhexian Liu | Homepage</title>
+    <style>
+        /* 网站基础样式设置 */
+        :root {
+            --primary-color: #2c3e50;
+            --link-color: #2980b9;
+            --bg-color: #fcfcfc;
+            --text-color: #333333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* 顶部个人信息区域布局 */
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #eee;
+            background-color: #ddd; /* 如果没有照片，显示灰色占位背景 */
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        /* 列表样式优化 */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .date {
+            float: right;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <img src="https://via.placeholder.com/150" alt="Zhexian Liu" class="profile-pic">
+        <div>
+            <h1>Zhaoxiang Liu (刘昭祥)</h1>
+            <p style="font-size: 1.2em; margin: 5px 0;">Student / Researcher</p>
+            <div class="contact-info">
+                📍 Huazhong Agricultural University, Wuhan, China<br>
+                📧 Email: <a href="mailto:your_email@example.com">your_email@example.com</a><br>
+                🐙 GitHub: <a href="https://github.com/54Xander" target="_blank">54Xander</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Welcome to my homepage! I am currently studying at <strong>Huazhong Agricultural University (HZAU)</strong>. 
+            My research lies at the intersection of artificial intelligence and bioinformatics, with a specific focus on <strong>AI-driven RNA-targeted drug design</strong>. 
+            I am deeply passionate about leveraging machine learning and deep learning techniques to decode complex biological mechanisms and accelerate the discovery of novel therapeutics.
+        </p>
+    </section>
+
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            <li><strong>AI in Drug Discovery (AIDD):</strong> Generative models for molecular design.</li>
+            <li><strong>RNA-Targeted Therapeutics:</strong> Predicting RNA structure and small-molecule interactions.</li>
+            <li><strong>Bioinformatics & Deep Learning:</strong> Applying graph neural networks (GNNs) and transformers to biological data.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Huazhong Agricultural University</strong> <span class="date">Sept. 202X - Present</span><br>
+                [Degree, e.g., B.S. / M.S.] in [Your Major, e.g., Bioinformatics]
+            </li>
+            </ul>
+    </section>
+
+    <section>
+        <h2>Projects & Publications</h2>
+        <ul>
+            <li>
+                <strong>AI-Driven RNA Sequence Analysis Tool</strong> <span class="date">202X</span><br>
+                <em>Personal Project</em><br>
+                Developed a deep learning model to predict RNA binding sites. Source code available on <a href="https://github.com/54Xander" target="_blank">GitHub</a>.
+            </li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 60px; text-align: center; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>&copy; 2026 Zhexian Liu. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
