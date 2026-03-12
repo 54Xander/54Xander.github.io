@@ -12,7 +12,7 @@
         a { color:var(--secondary); text-decoration:none; transition: 0.3s; }
         a:hover { color:var(--accent); }
         .header { display:flex; align-items:center; gap:35px; margin-bottom:30px; }
-        .photo { width:160px; height:160px; border-radius:12px; object-fit:cover; border:2px solid #eee; }
+        .photo { width:auto; max-width: 180px; height:220px; border-radius:12px; object-fit:cover; border:2px solid #eee; }
         .date { float:right; color:#777; font-size: 0.9em; }
         .item { margin-bottom:25px; }
         .title { font-weight:bold; color:var(--secondary); font-size:1.1em; }
@@ -30,7 +30,7 @@
         <h1>Zhaoxiang Liu </h1>
         <p style="font-size:1.1em;margin:5px 0;">Ph.D. Candidate | AI-Driven Drug Design</p>
         <div class="info">
-            📍 Huazhong Agricultural University / Wuhan University<br>
+            📍 Huazhong Agricultural University<br>
             📧 Email: <a href="mailto:19954284718@163.com">19954284718@163.com</a><br>
             🔗 <a href="https://github.com/54Xander" target="_blank">GitHub: 54Xander</a>
         </div>
@@ -40,11 +40,20 @@
 <section>
     <h2>About Me</h2>
     <p>
-        I am a Ph.D. candidate at <b>Huazhong Agricultural University</b> and <b>Wuhan University</b>. 
-        My research focus is <b>AI-driven RNA-targeted drug design</b>. I specialize in a "Wet-Dry Lab" integration, 
-        combining <b>Deep Learning</b> (Transformer, GNN) with <b>Biophysical Experiments</b> (Magnetic Tweezers, Protein Purification) 
+        I am a Ph.D. candidate at <b>Huazhong Agricultural University</b>. 
+        My research focus is <b>AI-driven drug design</b>. I specialize in a "Wet-Dry Lab" integration, 
+        combining <b>Deep Learning</b> (Transformer, GNN, etc.) with <b>Biophysical Experiments</b> (Magnetic Tweezers, Cell culture, etc.) 
         to create a closed-loop system for drug discovery.
     </p>
+</section>
+
+    <section>
+    <h2>Education</h2>
+    <ul>
+        <li><b>Huazhong Agricultural University</b> — Ph.D. in Electronic Information <span class="date">2023 – Pres.</span></li>
+        <li><b>Hubei University of Technology</b> — M.S. in Medicinal Chemistry <span class="date">2020 – 2023</span></li>
+        <li><b>Dezhou University</b> — B.S. in Pharmaceutical Engineering <span class="date">2015 – 2019</span></li>
+    </ul>
 </section>
 
 <section>
@@ -52,14 +61,20 @@
     
     <div class="item">
         <span class="date">2023 – Present</span>
-        <div class="title">AI-Driven RNA-Targeted Drug Design & G4 Stability</div>
-        <div class="sub">HZAU & Wuhan University (Ph.D. Research)</div>
+        <div class="title">AI-Driven RNA-Targeted Drug Design </div>
+        <div class="sub">Huazhong Agricultural University (Ph.D. Research)</div>
         <ul>
             <li>Led the design of RNA-targeted small molecules using deep learning-based virtual screening models.</li>
+        </ul>
+    </div>
+ <div class="item">
+        <span class="date">2023 – Present</span>
+        <div class="title">Single-molecule insights into G4 stability via magnetic tweezers</div>
+        <div class="sub"> Wuhan University (Ph.D. Research)</div>
+        <ul>
             <li>Utilized <b>Single-molecule Magnetic Tweezers</b> to explore the structural stability and unfolding kinetics of intermolecular G-Quadruplexes (G4).</li>
         </ul>
     </div>
-
     <div class="item">
         <span class="date">2020 – 2023</span>
         <div class="title">Covalent Small Molecule Screening & Mechanism Research</div>
@@ -75,8 +90,8 @@
         <div class="title">Metal Complex Synthesis & Bioactivity Detection</div>
         <div class="sub">Dezhou University (Bachelor's Project)</div>
         <ul>
-            <li>Participated in the design and synthesis of metal complexes.</li>
-            <li>Conducted bioactivity detection for synthesized complexes.</li>
+            <li>Design, synthesis, and biological activity evaluation of metal complexes.</li>
+            <li>Investigating the delivery outcomes of nano-targeted drug delivery systems.</li>
         </ul>
     </div>
 </section>
@@ -84,25 +99,15 @@
 <section>
     <h2>Skills</h2>
     <ul>
-        <li><b>AI & Computation:</b> Expert in Transformer and GNN models; proficient in <b>PyTorch</b> for drug-target prediction platforms; Virtual Screening & Molecular Docking.</li>
-        <li><b>Wet Lab:</b> Single-molecule Magnetic Tweezers, Protein Purification, Cell Culture, Western Blot, MTT Assays, Protein Crystallization.</li>
-        <li><b>Languages:</b> English (CET-4/CET-6) with professional proficiency in scientific literature.</li>
-        <li><b>Software:</b> Python, RDKit, Office Suite, National Computer Rank Examination Level 2.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><b>Huazhong Agricultural University</b> — Ph.D. in Electronic Information <span class="date">2023 – Pres.</span></li>
-        <li><b>Hubei University of Technology</b> — M.S. in Medicinal Chemistry <span class="date">2020 – 2023</span></li>
-        <li><b>Dezhou University</b> — B.S. in Pharmaceutical Engineering <span class="date">2015 – 2019</span></li>
+        <li><b>AI & Computation:</b> Multimodal Deep Learning, autodock, rDock, MD, Website construction, etc.</li>
+        <li><b>Wet Lab:</b> Single-molecule Magnetic Tweezers, Protein Purification, Cell Culture, Western Blot, MTT Assays, Protein Crystallization, etc.</li>
     </ul>
 </section>
 
 <section>
     <h2>Certificates</h2>
     <ul>
+        <li><b>Languages:</b> English (CET-4/CET-6).</li>
         <li><b>Professional:</b> Human Resource Management Certificate, Teacher Qualification Certificate.</li>
         <li><b>Technical:</b> National Computer Rank Examination Level 2.</li>
     </ul>
@@ -122,4 +127,5 @@
 
 </body>
 </html>
+
 
