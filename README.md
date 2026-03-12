@@ -128,7 +128,7 @@
     </section>
 
     <footer style="margin-top: 60px; text-align: center; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 20px;">
-        <p>&copy; 2026 Zhexian Liu. Powered by GitHub Pages.</p>
+        <p>&copy; 2026 zxLiu. Powered by GitHub Pages.</p>
     </footer>
 
 </body>
